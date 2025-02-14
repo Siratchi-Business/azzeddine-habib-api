@@ -1,8 +1,8 @@
-fetch('https://azzeddine-habib-api.onrender.com') // Reemplaza con la URL real de tu backend
+fetch('https://azzeddine-habib-api.onrender.com')
     .then(response => response.json())
     .then(data => {
         const projectGrid = document.getElementById('project-grid');
-        projectGrid.innerHTML = ''; // Limpiar contenido previo
+        projectGrid.innerHTML = '';
 
         data.projects.forEach(project => {
             const projectItem = document.createElement('div');
